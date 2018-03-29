@@ -20,7 +20,7 @@ def create_captcha(text, shear=0, size=(17,15)):
     font = ImageFont.truetype(r'Coval-Black.otf', 17)
     draw.text((0, -4), text, fill=1, font=font)
     image = np.array(im, dtype='int')
-    return image  #归一化处理
+    return image  
 
 m = create_captcha('M')
 a = create_captcha('A')
